@@ -1,0 +1,117 @@
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1160px;
+    margin: 0px auto;
+}  
+.pageTop{
+    background-image: url('../images/bannerBg.jpg');
+}
+.headerInner{
+    padding: 38px 0px;
+}
+.leftLogoOuter{
+    float: left;
+    width: 19%;
+}
+.siteLogo{
+    background-color: #FFBA00;
+    position: relative;
+    z-index: 1;
+    padding: 16px 0px 24px;
+}
+.siteLogo:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top:0px;
+    right: 90%;
+    background-color: #FFBA00;
+    height: 100%;
+    width: 999%;
+    z-index: -1;
+}
+.rightMenuOuter{
+    float: right;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+.rightMenuOuter a{
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+.mainMenu ul{
+    display: flex;
+    list-style: none;
+}
+.mainMenu li{
+    padding: 0px 35px;
+    font-size: 35px;
+}
+.mainMenu li:last-child{
+    padding-right: 0px;
+}
+.mainMenu li:hover > a{
+    color: #FFBA00;
+}
+
+/* banner Section  */
+.jnBanner{
+    padding: 80px 0px 180px; 
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.contentAlAmin{
+    height: 200px;
+    width: 100%;
+    background-color: #ffba00;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px 0px 0px;
+}
+.contentAlAmin h1{
+    font-weight: 900;
+    font-size: 125px;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 107px;
+}
+.contentAlAmin h1 span{
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 59px;
+    font-size: 103px;
+    letter-spacing: 11px;
+}
+.contentAlAmin h1 a{
+    font-weight: 600;
+    font-size: 35px;
+    color: #fff;
+    border: 4px solid #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 25px 22px 19px 70px;
+    background-color: #ffba00;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    transform: translateY(-28px);
+}
