@@ -1,0 +1,40 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.box{
+    width: 500px;
+    background-color: #3760A9;
+    color: #fff;
+    margin: 50px auto;
+    padding: 25px 15px;
+}
+.formInner{
+    position: relative;
+    width: 100%;
+}
+.formInner input[type=email]{
+    background-color: #fff;
+    height: 60px;
+    padding: 7px 90px 7px 15px;
+    border: none;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 22px;
+}
+.formInner input[type=submit], .formInner button{
+    position: absolute;
+    right: 10px;
+    height: 40px;
+    top: 10px;
+    background-color: #3760A9;
+    color: #fff;
+    border-radius: 0px;
+    padding: 5px 10px;
+    border: none;
+}
