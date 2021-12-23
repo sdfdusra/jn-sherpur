@@ -125,8 +125,14 @@ body{
     .siteLogo{
         padding: 16px 10px 24px;
     }
+    .container{
+        padding: 0px 15px;
+    }    
 }
 @media (max-width: 992px){
+    .jnBanner{
+        min-height: 600px;
+    }
     .leftLogoOuter{
         width: unset;
     }
@@ -164,9 +170,141 @@ body{
         display: block;
         padding: 10px;
     }
+    .contentAlAmin{
+        height: auto;
+        padding: 25px 0px;
+        text-align: center;
+    }
+    .contentAlAmin h1{
+        font-size: 100px;
+        line-height: 0.9;
+    }
+    .contentAlAmin h1 span{
+        margin-right: 35px;
+        font-size: 80px;
+    }
+    .contentAlAmin h1 a{
+        font-size: 28px;
+        padding: 20px 25px;
+        transform: translateY(0px);
+    }
 }
 @media (min-width: 992px){
     #mainMenu{
         display: flex !important;
     }
+}
+
+@media (max-width: 767px){
+    .jnBanner{
+        min-height: 450px;
+    }
+    .contentAlAmin h1{
+        font-size: 75px;
+    }
+    .contentAlAmin h1 span{
+        margin-right: 25px;
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+    .contentAlAmin h1 a{
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+}
+@media (max-width: 576px){
+    .jnBanner{
+        min-height: 350px;
+    }
+    .contentAlAmin h1{
+        font-size: 50px;
+    }
+    .contentAlAmin h1 span{
+        margin-right: 0px;
+        font-size: 35px;
+    }
+    .contentAlAmin h1 a{
+        font-size: 18px;
+    }
+}
+
+
+/* Half Pizza  */
+.halfPizza{
+    background-color: #333; 
+    color: #fff;
+    padding: 90px 0px 138px;
+    position: relative;
+}
+.halfPizza .container{
+    position: relative;
+    z-index: 1;
+}
+.pizzaImg{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 60%;
+    max-width: 630px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transform: translateY(-50%);
+    z-index: 0;
+    padding: 30px 0px;
+}
+.pizzaMahadi{
+    /* background-color: #FFBA00; */
+    min-height: 190px;
+    position: relative;
+    z-index: 1;
+    max-width: 841px;
+    width: 100%;
+    padding: 17px 10px 0px 150px
+}
+.pizzaMahadi:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 190px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #ffba00;
+    z-index: -1;
+}
+.pizzaMahadi .badge{
+    display: inline-block;
+    transform-origin: left center;
+    font-size: 49px;
+    letter-spacing: 4.8px;
+    position: absolute;
+    left: 0px;
+    top: 66%;
+    transform:rotate(-90deg);
+    padding-top: 100px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+} 
+.halfPizza h3{
+    font-size: 42px;
+    font-family: 'Lato';
+    font-weight: 700;
+    letter-spacing: 8.4px;
+    margin-bottom: 30px;
+    padding-left: 150px;
+}
+.pizzaMahadi ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 33px;
+    letter-spacing: 1px;
+}
+.pizzaMahadi li{
+    margin-bottom: 41px;
+}
+.pizzaMahadi li:last-child{
+    margin-bottom: 0px;
 }
